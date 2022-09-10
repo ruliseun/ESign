@@ -1,0 +1,78 @@
+body{
+    margin: 0px;
+    text-align: center;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    color: rgba(5,8,114,1);
+    background: white;
+    height: 100vh;
+    position: relative;
+}
+
+nav{
+    margin-top: 0px;
+    position: sticky;
+    height: 40px;
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: 12px;
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+}
+
+footer small a{
+    justify-content: center;
+    text-align: center;
+    color: white
+}
+
+.signature-area{
+    border: 1px solid black;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+.pen-size{
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.actions button{
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 3px 10px;
+    border-radius: 5px;
+}
+
+
+.clear-btn{
+    background-color: #e7e7e7; 
+    color: black;
+}
+
+.download-btn{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.send-btn{
+    background-color: #008CBA;
+    color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
+}
