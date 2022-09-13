@@ -8,8 +8,18 @@ const penSize = document.querySelector('.pen-size')
 const ctx = canvas.getContext('2d');
 let editMode = false;
 
-canvas.width = 600
-canvas.height = 400
+function myFunction(minAllowableWidth) {
+    if (minAllowableWidth.matches) {
+        canvas.width = 400
+        canvas.height = 200
+    } else {
+        canvas.width = 600
+        canvas.height = 400
+    }
+}
+const minAllowableWidth = window.matchMedia("(max-width: 600px)")
+myFunction(minAllowableWidth)
+minAllowableWidth.addListener(myFunction)
 
 let signaturePen = 1
 

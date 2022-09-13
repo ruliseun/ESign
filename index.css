@@ -3,15 +3,19 @@ body{
     text-align: center;
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     color: rgba(5,8,114,1);
-    background: white;
+    background: rgb(211, 211, 211);
     height: 100vh;
-    position: relative;
+}
+
+header p{
+    font-size: 20px;
 }
 
 nav{
     margin-top: 0px;
     position: sticky;
     height: 40px;
+    width: 100%;
     background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
 }
 
@@ -36,6 +40,7 @@ footer small a{
     border: 1px solid black;
     border-radius: 10px;
     border-width: 2px;
+    background: white;
 }
 
 .pen-size{
@@ -75,4 +80,21 @@ footer small a{
 
 input[type=number]::-webkit-inner-spin-button {
     opacity: 1
+}
+
+
+@media only screen and (max-width: 600px){
+    body{
+        margin: auto;
+        text-align: center;
+    }
+
+    nav{
+        width: auto;
+    }
+
+    footer{
+        position: fixed;
+    }
+
 }
